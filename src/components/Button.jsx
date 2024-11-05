@@ -11,7 +11,7 @@ const Button = () => {
     };
 
     return (
-        <div onMouseEnter={() => btnAnimation(-100)} onMouseLeave={() => btnAnimation(0)} className="button w-36 h-9 bg-white flex justify-center items-center text-sm font-light text-black rounded-full cursor-pointer">
+        <div onMouseEnter={() => btnAnimation(-100)} onMouseLeave={() => btnAnimation(0)} className="button w-36 h-9 bg-white flex justify-center items-center text-sm font-light text-black rounded-full cursor-pointer z-10">
             <div className="frame h-[85%] overflow-hidden">
                 <div className="frame-content h-full flex items-center justify-center gap-3">
                     <span>Start a Project</span>

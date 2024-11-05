@@ -2,10 +2,11 @@ import Button from './Button';
 
 const Navbar = () => {
     return (
-        <div className="max-w-screen-xl mx-auto py-4 flex  items-center justify-between border-b border-zinc-700">
-            <div className="nleft flex items-center gap-20">
+        <div className="max-w-screen-xl mx-auto py-4 flex items-center justify-between border-b border-zinc-700">
+            <div className="nleft flex items-center gap-20 z-10">
                 {/* Logo */}
                 <svg
+                    className='cursor-pointer'
                     width="84"
                     height="22"
                     viewBox="0 0 84 22"
