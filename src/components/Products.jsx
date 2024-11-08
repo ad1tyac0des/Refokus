@@ -35,7 +35,21 @@ const Products = () => {
             desc: "A 3D animation that showcases the TTR platform and how it works in the real world for the first time for the YIR 2022 campaign.",
             btn1: true,
             btn2: false
-        }
+        },
+
+        {
+            title: "Jungle",
+            desc: "We crafted a timeless visual system for Jungle Ventures, covering all aspects of web design, and empowered their marketing team to scale organically using Webflow.",
+            btn1: true,
+            btn2: true
+        },
+
+        {
+            title: "Silvr",
+            desc: "We teamed up with financing solutions provider Silvr to audit, refine and evolve their brand.",
+            btn1: true,
+            btn2: true
+        },
     ];
 
     return (
