@@ -2,21 +2,21 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { IoIosReturnRight } from "react-icons/io";
 
-const Button = ({title = "Start a Project"}) => {
+const Button = ({ title = "Start a Project" }) => {
     const buttonRef = useRef(null);
 
     const btnAnimation = (yOffset) => {
         gsap.to(buttonRef.current.querySelectorAll(".frame-content"), {
             yPercent: yOffset,
-            duration: .5,
-            ease: 'power2.inOut'
+            duration: 0.5,
+            ease: "power2.inOut",
         });
     };
 
     return (
-        <div 
+        <div
             ref={buttonRef}
-            onMouseEnter={() => btnAnimation(-100)} 
+            onMouseEnter={() => btnAnimation(-100)}
             onMouseLeave={() => btnAnimation(0)}
             className="button w-36 h-9 bg-white flex justify-center items-center text-sm font-light text-black rounded-full cursor-pointer z-10"
         >

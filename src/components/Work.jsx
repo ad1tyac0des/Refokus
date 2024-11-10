@@ -50,19 +50,22 @@ const Work = () => {
                 </h1>
 
                 <div className="w-full h-full absolute top-0">
-                    {data.map((elem, index) => elem.isActive && (
-                        <div
-                            key={index}
-                            className="w-60 aspect-square absolute -translate-x-1/2 -translate-y-1/2 rounded-lg overflow-hidden"
-                            style={{ top: elem.top, left: elem.left }}
-                        >
-                            <img
-                                className="w-full h-full object-cover"
-                                src={elem.src}
-                                alt="work"
-                            />
-                        </div>
-                    ))}
+                    {data.map(
+                        (elem, index) =>
+                            elem.isActive && (
+                                <div
+                                    key={index}
+                                    className="w-60 aspect-square absolute -translate-x-1/2 -translate-y-1/2 rounded-lg overflow-hidden"
+                                    style={{ top: elem.top, left: elem.left }}
+                                >
+                                    <img
+                                        className="w-full h-full object-cover"
+                                        src={elem.src}
+                                        alt="work"
+                                    />
+                                </div>
+                            )
+                    )}
                 </div>
             </div>
         </div>

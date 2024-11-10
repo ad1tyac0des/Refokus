@@ -1,4 +1,4 @@
-import Button from './Button';
+import Button from "./Button";
 
 const Navbar = () => {
     return (
@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="nleft flex items-center gap-20 z-10">
                 {/* Logo */}
                 <svg
-                    className='cursor-pointer'
+                    className="cursor-pointer"
                     width="84"
                     height="22"
                     viewBox="0 0 84 22"
