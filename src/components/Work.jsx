@@ -45,7 +45,7 @@ const Work = () => {
     return (
         <div className="w-full">
             <div className="max-w-screen-xl mx-auto relative">
-                <h1 className="text-[36rem] leading-none tracking-tight font-medium text-center">
+                <h1 className="text-[36rem] leading-[1.4] tracking-tight font-medium text-center">
                     work
                 </h1>
 
