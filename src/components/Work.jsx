@@ -1,5 +1,8 @@
+import { useScroll } from "motion/react";
+import { useState } from "react";
+
 const Work = () => {
-    const data = [
+    const [images, setImages] = useState([
         {
             src: "/assets/images/work/img1.png",
             top: "50%",
@@ -40,7 +43,51 @@ const Work = () => {
             left: "40%",
             isActive: false,
         },
-    ];
+    ]);
+
+    const { scrollYProgress } = useScroll();
+
+    scrollYProgress.on("change", (scrollVal) => {
+        function showImage(arr) {
+            setImages((prev) =>
+                prev.map((item, index) =>
+                    // Check if current index exists in array to toggle active state
+                    arr[index] === index
+                        ? { ...item, isActive: true }
+                        : { ...item, isActive: false }
+
+                    // Alternative approach using indexOf to achieve same result
+                    // arr.indexOf(index) === -1
+                    //     ? { ...item, isActive: false }
+                    //     : { ...item, isActive: true }
+                )
+            );
+        }
+
+        switch (Math.floor(scrollVal * 100)) {
+            case 0:
+                showImage([]);
+                break;
+            case 1:
+                showImage([0]);
+                break;
+            case 4:
+                showImage([0, 1]);
+                break;
+            case 5:
+                showImage([0, 1, 2]);
+                break;
+            case 6:
+                showImage([0, 1, 2, 3]);
+                break;
+            case 8:
+                showImage([0, 1, 2, 3, 4]);
+                break;
+            case 10:
+                showImage([0, 1, 2, 3, 4, 5]);
+                break;
+        }
+    });
 
     return (
         <div className="w-full">
@@ -50,7 +97,7 @@ const Work = () => {
                 </h1>
 
                 <div className="w-full h-full absolute top-0">
-                    {data.map(
+                    {images.map(
                         (elem, index) =>
                             elem.isActive && (
                                 <div
