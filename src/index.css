@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Removes Scrollbar for Firefox */
+*{
+    scrollbar-width: none;
+}
