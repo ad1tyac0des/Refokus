@@ -62,26 +62,36 @@ const Products = () => {
     ]);
     const [pos, setPos] = useState(0);
     const [hoveredCardIndex, setHoveredCardIndex] = useState(0);
+    const [moveX, setMoveX] = useState(-50);
 
     const getPos = (index) => {
         setPos(19 * index);
         setHoveredCardIndex(index);
     };
 
-    function showBtn2(index) {
+    const showBtn2 = (index) => {
         setProducts((prev) =>
             prev.map((elem, i) =>
-                index === i
-                    ? { ...elem, btn2: true }
-                    : { ...elem, btn2: false }
+                index === i ? { ...elem, btn2: true } : { ...elem, btn2: false }
             )
-        )
-    }
+        );
+    };
+
+    const handleMouseMove = (moveX) => {
+        setMoveX(moveX);
+    };
 
     return (
         <div className="my-40 relative">
             {products.map((elem, index) => (
-                <Product key={index} val={elem} getPos={getPos} showBtn2={showBtn2} index={index} />
+                <Product
+                    key={index}
+                    val={elem}
+                    getPos={getPos}
+                    showBtn2={showBtn2}
+                    index={index}
+                    handleMouseMove={handleMouseMove}
+                />
             ))}
             <div className="w-full h-[103%] absolute top-1/2 -translate-y-1/2 pointer-events-none">
                 <motion.div
@@ -90,10 +100,12 @@ const Products = () => {
                         y: pos,
                     }}
                     animate={{
+                        x: moveX + "%",
                         y: `${pos}rem`,
                     }}
                     transition={{
-                        duration: 0.3,
+                        x: { duration: .1, ease: [0.19, 1, 0.22, 1] },
+                        y: { duration: .3 },
                     }}
                     className="window w-[32rem] h-[22.8rem] absolute left-[43.5%]"
                 >

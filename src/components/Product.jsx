@@ -1,6 +1,8 @@
 import Button from "./Button";
+import gsap from "gsap";
 
-const Product = ({ val, getPos, showBtn2, index }) => {
+const Product = ({ val, getPos, showBtn2, index, handleMouseMove }) => {
+
     const { title, desc, btn1, btn2, background } = val;
 
     return (
@@ -8,6 +10,14 @@ const Product = ({ val, getPos, showBtn2, index }) => {
             onMouseEnter={() => {
                 getPos(index);
                 showBtn2(index);
+            }}
+            onMouseMove={(dets) => {
+                const x1 = dets.currentTarget.getBoundingClientRect().x
+                const x2 = dets.currentTarget.getBoundingClientRect().width
+
+                const moveX = gsap.utils.mapRange(-x1, -x2, -47, -53, dets.clientX)
+
+                handleMouseMove(moveX)
             }}
             style={{ ["--hover-bg"]: background }}
             className={`w-full h-[19rem] hover:bg-[var(--hover-bg)] transition-colors duration-500 ${index===0 && 'border-t'} border-b border-zinc-500`}
