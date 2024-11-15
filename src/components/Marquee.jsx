@@ -1,13 +1,43 @@
-const Marquee = ({ images }) => {
-    return (
-        <div className="flex gap-28 py-10 whitespace-nowrap overflow-hidden">
-            {images.map((image, index) => (
-                <img key={index} src={image} className="w-32 flex-shrink-0" />
-            ))}
+import { motion } from "motion/react"
 
-            {images.map((image, index) => (
-                <img key={index} src={image} className="w-32 flex-shrink-0" />
-            ))}
+const Marquee = ({ images, index }) => {
+    return (
+        <div className="flex py-10 whitespace-nowrap overflow-hidden">
+            <motion.div
+                initial={{
+                    x: index === 0 ? 0 : "-100%"
+                }}
+                animate={{
+                    x: index === 0 ? "-100%" : 0
+                }}
+                transition={{
+                    duration: 15,
+                    ease: "linear",
+                    repeat: Infinity
+                }}
+                className="px-14 flex gap-28 flex-shrink-0">
+                {images.map((image, index) => (
+                    <img key={index} src={image} className="w-32 flex-shrink-0" />
+                ))}
+            </motion.div>
+
+            <motion.div
+                initial={{
+                    x: index === 0 ? 0 : "-100%"
+                }}
+                animate={{
+                    x: index === 0 ? "-100%" : 0
+                }}
+                transition={{
+                    duration: 15,
+                    ease: "linear",
+                    repeat: Infinity
+                }}
+                className="px-14 flex gap-28 flex-shrink-0">
+                {images.map((image, index) => (
+                    <img key={index} src={image} className="w-32 flex-shrink-0" />
+                ))}
+            </motion.div>
         </div>
     );
 };

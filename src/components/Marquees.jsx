@@ -31,10 +31,12 @@ const Marquees = () => {
     return (
         <div className="mt-10">
             {images.map((elem, index) => (
-                <Marquee key={index} images={elem} />
+                <Marquee key={index} images={elem} index={index} />
             ))}
         </div>
     );
 };
 
 export default Marquees;
+
+// py-20 mt-32 w-full relative overflow-hidden
