@@ -63,7 +63,7 @@ const Products = () => {
     const [pos, setPos] = useState(0);
     const [hoveredCardIndex, setHoveredCardIndex] = useState(0);
     const [moveX, setMoveX] = useState(-50);
-
+    const [moveY, setMoveY] = useState(0);
     const getPos = (index) => {
         setPos(19 * index);
         setHoveredCardIndex(index);
@@ -77,8 +77,9 @@ const Products = () => {
         );
     };
 
-    const handleMouseMove = (moveX) => {
+    const handleMouseMove = (moveX, moveY) => {
         setMoveX(moveX);
+        setMoveY(moveY);
     };
 
     return (
@@ -107,6 +108,7 @@ const Products = () => {
                         x: { duration: .1, ease: [0.19, 1, 0.22, 1] },
                         y: { duration: .3 },
                     }}
+                    style={{ top: `${moveY}%` }}
                     className="window w-[32rem] h-[22.8rem] absolute left-[43.5%]"
                 >
                     {products.map(

@@ -15,9 +15,13 @@ const Product = ({ val, getPos, showBtn2, index, handleMouseMove }) => {
                 const x1 = dets.currentTarget.getBoundingClientRect().x
                 const x2 = dets.currentTarget.getBoundingClientRect().width
 
-                const moveX = gsap.utils.mapRange(-x1, -x2, -47, -53, dets.clientX)
+                const y1 = dets.currentTarget.getBoundingClientRect().y
+                const y2 = y1 + dets.currentTarget.getBoundingClientRect().height
 
-                handleMouseMove(moveX)
+                const moveX = gsap.utils.mapRange(-x1, -x2, -48, -52, dets.clientX)
+                const moveY = gsap.utils.mapRange(y1, y2, -1, 1, dets.clientY)
+
+                handleMouseMove(moveX, moveY)
             }}
             style={{ ["--hover-bg"]: background }}
             className={`w-full h-[19rem] hover:bg-[var(--hover-bg)] transition-colors duration-500 ${index===0 && 'border-t'} border-b border-zinc-500`}
