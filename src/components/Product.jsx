@@ -19,7 +19,7 @@ const Product = ({ val, getPos, showBtn2, index, handleMouseMove }) => {
                 const y2 = y1 + dets.currentTarget.getBoundingClientRect().height
 
                 const moveX = gsap.utils.mapRange(-x1, -x2, -48, -52, dets.clientX)
-                const moveY = gsap.utils.mapRange(y1, y2, -1, 1, dets.clientY)
+                const moveY = gsap.utils.mapRange(y1, y2, -.7, .7, dets.clientY)
 
                 handleMouseMove(moveX, moveY)
             }}
