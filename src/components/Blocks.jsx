@@ -21,7 +21,7 @@ const Blocks = () => {
         }
     ]
     return (
-        <div className="w-full py-20">
+        <div className="w-full py-32">
             <div className="max-w-screen-xl mx-auto flex gap-2">
                 {blocks.map((block, index) => (
                     <Block key={index} {...block} />
