@@ -3,8 +3,8 @@ import Button from "./Button";
 
 const Block = ({ basis, cta, desc, title, subtitle, hover }) => {
     return (
-        <div className={`${basis} min-h-96 flex flex-col justify-between bg-zinc-800 rounded-xl px-4 py-5 ${hover ? "hover:bg-violet-600" : "hover:bg-zinc-700"} transition-colors duration-300`}>
-            <div className="w-full">
+        <div className={`${basis} group min-h-96 flex flex-col justify-between bg-zinc-800 rounded-xl px-4 py-5 ${hover ? "hover:bg-violet-600" : "hover:bg-zinc-700"} transition-colors duration-300`}>
+            <div className="w-full group-hover:px-1 transition-all duration-300">
                 <div className="flex items-center justify-between">
                     <h5 className="text-base font-light">{subtitle}</h5>
                     <HiOutlineArrowLongRight />
