@@ -29,10 +29,17 @@ const Marquees = () => {
     ];
 
     return (
-        <div className="mt-10">
+        <div className="relative mt-10">
+            {/* Left vignette overlay */}
+            <div className="absolute top-0 left-0 z-10 w-[27rem] h-full bg-gradient-to-r from-zinc-900 to-transparent"></div>
+
+            {/* Marquee */}
             {images.map((elem, index) => (
                 <Marquee key={index} images={elem} index={index} />
             ))}
+
+            {/* Right vignette overlay */}
+            <div className="absolute top-0 right-0 z-10 w-[27rem] h-full bg-gradient-to-l from-zinc-900 to-transparent"></div>
         </div>
     );
 };
