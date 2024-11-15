@@ -9,6 +9,7 @@ const Products = () => {
             desc: "With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.",
             btn1: true,
             btn2: false,
+            background: "#5255EE",
         },
 
         {
@@ -16,6 +17,7 @@ const Products = () => {
             desc: "A 3D animation that showcases the TTR platform and how it works in the real world for the first time.",
             btn1: true,
             btn2: false,
+            background: "#46289A",
         },
 
         {
@@ -23,6 +25,7 @@ const Products = () => {
             desc: "A 3D animation that showcases the TTR platform and how it works in the real world for the first time for the YIR 2022 campaign.",
             btn1: true,
             btn2: true,
+            background: "#5D4EFF",
         },
 
         {
@@ -30,6 +33,7 @@ const Products = () => {
             desc: "With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.",
             btn1: true,
             btn2: true,
+            background: "#7E1FFF",
         },
 
         {
@@ -37,6 +41,7 @@ const Products = () => {
             desc: "A 3D animation that showcases the TTR platform and how it works in the real world for the first time for the YIR 2022 campaign.",
             btn1: true,
             btn2: false,
+            background: "#1430D4",
         },
 
         {
@@ -44,6 +49,7 @@ const Products = () => {
             desc: "We crafted a timeless visual system for Jungle Ventures, covering all aspects of web design, and empowered their marketing team to scale organically using Webflow.",
             btn1: true,
             btn2: true,
+            background: "#0000FF",
         },
 
         {
@@ -51,6 +57,7 @@ const Products = () => {
             desc: "We teamed up with financing solutions provider Silvr to audit, refine and evolve their brand.",
             btn1: true,
             btn2: true,
+            background: "#FF7548",
         },
     ];
 
