@@ -101,14 +101,14 @@ const Products = () => {
                         y: pos,
                     }}
                     animate={{
-                        x: moveX + "%",
-                        y: `${pos}rem`,
+                        x: moveX + "%", // move as mouse moves in x axis in product (subtle hover effect)
+                        y: `${pos}rem`, // move as mouse moves to different products
                     }}
                     transition={{
                         x: { duration: .1, ease: [0.19, 1, 0.22, 1] },
                         y: { duration: .3 },
                     }}
-                    style={{ top: `${moveY}%` }}
+                    style={{ top: `${moveY}%` }} // move as mouse moves in y axis in product (subtle hover effect)
                     className="window w-[32rem] h-[22.8rem] absolute left-[43.5%]"
                 >
                     {products.map(

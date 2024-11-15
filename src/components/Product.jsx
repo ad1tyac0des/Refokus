@@ -24,7 +24,7 @@ const Product = ({ val, getPos, showBtn2, index, handleMouseMove }) => {
                 handleMouseMove(moveX, moveY)
             }}
             style={{ ["--hover-bg"]: background }}
-            className={`w-full h-[19rem] hover:bg-[var(--hover-bg)] transition-colors duration-500 ${index===0 && 'border-t'} border-b border-zinc-500`}
+            className={`w-full h-[19rem] hover:bg-[var(--hover-bg)] hover:scale-y-105 transition-[background,transform] duration-[.4s,.3s] ${index===0 && 'border-t'} border-b border-zinc-500`}
         >
             <div className="max-w-screen-xl mx-auto flex items-center justify-between py-20">
                 <h1 className="text-6xl font-medium">{title}</h1>
