@@ -6,7 +6,7 @@ const Products = () => {
     const [products, setProducts] = useState([
         {
             title: "Arqitel",
-            desc: "With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.",
+            desc: "With a continuous 3D animation, we showcase Arqitel's approach and show how migration data translates into real estate.",
             btn1: true,
             btn2: false,
             background: "#5255EE",
@@ -14,7 +14,7 @@ const Products = () => {
 
         {
             title: "TTR",
-            desc: "A 3D animation that showcases the TTR platform and how it works in the real world for the first time.",
+            desc: "We've created an interactive site using generative AI to allow users to engage with our thinking about Ai, industry trends and design.",
             btn1: true,
             btn2: false,
             background: "#46289A",
@@ -22,7 +22,7 @@ const Products = () => {
 
         {
             title: "YIR",
-            desc: "A 3D animation that showcases the TTR platform and how it works in the real world for the first time for the YIR 2022 campaign.",
+            desc: "We celebrated our first year with a Showcase Website that reflects on a year of growth, building an awesome team & culture, defining our brand, and more.",
             btn1: true,
             btn2: false,
             background: "#5D4EFF",
@@ -30,7 +30,7 @@ const Products = () => {
 
         {
             title: "Yahoo!",
-            desc: "With a continuous 3D animation, we showcase Arqitel approach and show how migration data translates into real estate.",
+            desc: "We enhanced the New York Fashion Week, by creating a fully digital AR fashion experience for Yahoo and Maisie Wilen, featuring holographic 3D models and an integrated web shop.",
             btn1: true,
             btn2: false,
             background: "#7E1FFF",
@@ -38,7 +38,7 @@ const Products = () => {
 
         {
             title: "Rainfall",
-            desc: "A 3D animation that showcases the TTR platform and how it works in the real world for the first time for the YIR 2022 campaign.",
+            desc: "We crafted a website for Rainfall Ventures, developing prototypes and custom code that ultimately allows their team to update content regularly and with ease.",
             btn1: true,
             btn2: false,
             background: "#1430D4",
