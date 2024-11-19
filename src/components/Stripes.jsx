@@ -29,7 +29,7 @@ const Stripes = () => {
     ];
 
     return (
-        <div className="w-full flex mt-20">
+        <div className="w-full flex mt-20 overflow-x-auto lg:overflow-hidden">
             {data.map((element, index) => (
                 <Stripe key={index} val={element} index={index} />
             ))}
