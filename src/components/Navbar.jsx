@@ -2,13 +2,13 @@ import Button from "./Button";
 
 const Navbar = () => {
     return (
-        <div className="max-w-screen-xl mx-auto py-4 flex items-center justify-between border-b border-zinc-700">
+        <div className="max-w-screen-xl mx-auto px-2.5 md:px-5 lg:px-0 py-4 flex items-center justify-between border-b border-zinc-700">
             <div className="nleft flex items-center gap-20 z-10">
                 {/* Logo */}
                 <svg
                     className="cursor-pointer"
-                    width="84"
-                    height="22"
+                    width={window.innerWidth > 768 ? "84" : "96"}
+                    height={window.innerWidth > 768 ? "22" : "24"}
                     viewBox="0 0 84 22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </svg>
 
                 {/* Navbar Links */}
-                <div className="nav-links flex items-center gap-14 ml-[4.5rem]">
+                <div className="nav-links hidden lg:flex items-center gap-14 ml-[4.5rem]">
                     {["Home", "Work", "Culture", "", "News"].map((navElement, index) => (
                         <a
                             className="nav-link text-sm font-light flex items-center gap-1"
@@ -58,7 +58,17 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <Button />
+            {window.innerWidth > 768 ? (
+                <Button title="Start a project" />
+                ) : (
+                <Button
+                    title="Menu"
+                    icon={false}
+                    bgColor="bg-transparent"
+                    textColor="text-white"
+                    width="w-20"
+                />
+            )}
         </div>
     );
 };
