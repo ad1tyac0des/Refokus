@@ -3,7 +3,10 @@ import Button from "./Button";
 
 const Block = ({ basis, cta, desc, title, subtitle, hover }) => {
     return (
-        <div className={`${basis} group min-h-96 flex flex-col justify-between bg-zinc-800 rounded-xl px-4 py-5 ${hover ? "hover:bg-violet-600" : "hover:bg-zinc-700"} transition-colors duration-300`}>
+        <div
+            className={`${basis} group min-h-[19rem] md:min-h-96 flex flex-col justify-between bg-violet-600 md:bg-zinc-800 rounded-xl px-4 py-5 ${hover ? "hover:bg-violet-600" : "hover:bg-zinc-700"
+                } transition-colors duration-300`}
+        >
             <div className="w-full group-hover:px-1 transition-all duration-300">
                 <div className="flex items-center justify-between">
                     <h5 className="text-base font-light">{subtitle}</h5>
@@ -15,7 +18,7 @@ const Block = ({ basis, cta, desc, title, subtitle, hover }) => {
             <div className="w-full">
                 {cta && (
                     <>
-                        <h1 className="text-8xl font-semibold tracking-[-0.015em]">
+                        <h1 className="text-5xl md:text-8xl font-semibold tracking-[-0.015em]">
                             Start a Project
                         </h1>
                         <div className="mt-5">

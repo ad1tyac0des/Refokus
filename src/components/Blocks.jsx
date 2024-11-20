@@ -12,7 +12,7 @@ const Blocks = () => {
             hover: false
         },
         {
-            basis: "basis-2/3",
+            basis: "basis-full lg:basis-2/3",
             cta: true,
             desc: false,
             title: "Let's get to it, together",
@@ -21,10 +21,13 @@ const Blocks = () => {
         }
     ]
     return (
-        <div className="w-full py-32">
+        <div className="w-full py-28 lg:py-32 px-3">
             <div className="max-w-screen-xl mx-auto flex gap-2">
                 {blocks.map((block, index) => (
-                    <Block key={index} {...block} />
+
+                    // doesnt render first block(index 0) on mobile and tablets
+                    window.innerWidth < 1024 && index === 0 ? null : <Block key={index} {...block} />
+
                 ))}
             </div>
         </div>
