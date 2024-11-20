@@ -10,3 +10,10 @@
 *{
     scrollbar-width: none;
 }
+
+/* Only for Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+    *{
+        user-select: none;
+    }
+}
