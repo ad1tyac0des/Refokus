@@ -6,7 +6,7 @@ const Footer = () => {
 
           {/* Logo */}
           <div className="basis-1/2">
-            <h1 className="text-[6.5rem] md:text-[12rem] leading-none tracking-tight font-medium">
+            <h1 className="-translate-x-1.5 text-[6.5rem] md:text-[12rem] leading-none tracking-tight font-medium">
               refokus.
             </h1>
           </div>
