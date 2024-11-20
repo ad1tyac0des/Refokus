@@ -33,7 +33,7 @@ const Product = ({ val, getPos, showBtn2, index, handleMouseMove }) => {
 
                 {/* Image Container | Hidden on Desktops */}
                 <div className="w-full h-64 md:h-96 mt-5 bg-gray-700 rounded-lg overflow-hidden lg:hidden">
-                    <img className="w-full h-full object-cover object-center" src={`/assets/images/product/${media}.webp`} />
+                    <img className="w-full h-full object-cover object-center" src={`assets/images/product/${media}.webp`} />
                 </div>
 
                 <div className="details w-full lg:w-1/3">

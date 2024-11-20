@@ -135,7 +135,7 @@ const Products = () => {
                                         autoPlay
                                         muted
                                         loop
-                                        src={`/assets/videos/products/${elem.media}.webm`}
+                                        src={`assets/videos/products/${elem.media}.webm`}
                                     ></video>
                                 </motion.div>
                             )
