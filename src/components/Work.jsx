@@ -4,41 +4,41 @@ import { useState } from "react";
 const Work = () => {
     const [images, setImages] = useState([
         {
-            src: "/assets/images/work/img1.png",
+            src: "assets/images/work/img1.png",
             top: "50%",
             left: "50%",
             isActive: false,
         },
         {
-            src: "/assets/images/work/img2.png",
+            src: "assets/images/work/img2.png",
             top: "55%",
             left: "45%",
             isActive: false,
         },
 
         {
-            src: "/assets/images/work/img3.png",
+            src: "assets/images/work/img3.png",
             top: "45%",
             left: "55%",
             isActive: false,
         },
 
         {
-            src: "/assets/images/work/img4.png",
+            src: "assets/images/work/img4.png",
             top: "50%",
             left: "50%",
             isActive: false,
         },
 
         {
-            src: "/assets/images/work/img5.png",
+            src: "assets/images/work/img5.png",
             top: "60%",
             left: "55%",
             isActive: false,
         },
 
         {
-            src: "/assets/images/work/img6.png",
+            src: "assets/images/work/img6.png",
             top: "65%",
             left: "40%",
             isActive: false,
