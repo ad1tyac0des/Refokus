@@ -10,6 +10,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#5255EE",
+            media: "arqitel"
         },
 
         {
@@ -18,6 +19,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#46289A",
+            media: "ttr"
         },
 
         {
@@ -26,6 +28,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#5D4EFF",
+            media: "yir"
         },
 
         {
@@ -34,6 +37,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#7E1FFF",
+            media: "yahoo"
         },
 
         {
@@ -42,6 +46,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#1430D4",
+            media: "rainfall"
         },
 
         {
@@ -50,6 +55,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#0000FF",
+            media: "jungle"
         },
 
         {
@@ -58,6 +64,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#FF7548",
+            media: "silvr"
         },
     ]);
     const [pos, setPos] = useState(0);
@@ -83,7 +90,7 @@ const Products = () => {
     };
 
     return (
-        <div className="my-40 relative">
+        <div className="my-28 md:my-32 lg:my-40 relative flex flex-col gap-4 lg:gap-0 px-3 lg:px-0">
             {products.map((elem, index) => (
                 <Product
                     key={index}
@@ -94,7 +101,10 @@ const Products = () => {
                     handleMouseMove={handleMouseMove}
                 />
             ))}
-            <div className="w-full h-[103%] absolute top-1/2 -translate-y-1/2 pointer-events-none">
+
+            {/* Main Videos Container | Hidden on mobile and tablets */}
+            <div className="w-full h-[103%] absolute top-1/2 -translate-y-1/2 pointer-events-none hidden lg:block">
+                {/* Video Window */}
                 <motion.div
                     initial={{
                         x: "-50%",
@@ -121,16 +131,11 @@ const Products = () => {
                                     }}
                                     className="w-full h-full rounded-xl overflow-hidden"
                                 >
-                                    {/* Convert title to lowercase and remove any non-alphabetic characters for video filename */}
                                     <video
                                         autoPlay
                                         muted
                                         loop
-                                        src={`/assets/videos/products/${elem.title
-                                            .toLowerCase()
-                                            .split("")
-                                            .filter((char) => /[a-z]/.test(char))
-                                            .join("")}.webm`}
+                                        src={`/assets/videos/products/${elem.media}.webm`}
                                     ></video>
                                 </motion.div>
                             )

@@ -9,6 +9,8 @@ const Button = ({
     textColor = "text-black",
     opacity = "opacity-100",
     width = "w-36",
+    height = "h-9",
+    fontSize = "text-sm",
 }) => {
     const buttonRef = useRef(null);
 
@@ -25,7 +27,7 @@ const Button = ({
             ref={buttonRef}
             onMouseEnter={() => btnAnimation(-100)}
             onMouseLeave={() => btnAnimation(0)}
-            className={`button ${width} h-9 flex justify-center items-center border text-sm font-light rounded-full cursor-pointer z-10 ${bgColor} ${textColor} ${opacity} transition-opacity duration-[420ms]`}
+            className={`button select-none ${width} ${height} flex justify-center items-center border ${fontSize} font-light rounded-full cursor-pointer z-10 ${bgColor} ${textColor} ${opacity} transition-opacity duration-[420ms]`}
         >
             <div className="frame h-[85%] overflow-hidden">
                 <div className="frame-content h-full flex items-center justify-center gap-3">
