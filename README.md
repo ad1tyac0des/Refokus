@@ -14,14 +14,11 @@
 
 A pixel-perfect clone of Refokus Work Page built with React and modern web technologies. This project showcases advanced animations, smooth scrolling effects, and responsive design principles.
 
-## ⚡ View Live
+## ⚡ Demo
 
 [![Live Demo](https://img.shields.io/badge/LIVE_DEMO-%238B5CF6.svg?style=for-the-badge&labelColor=f5f5f5&logo=github&logoColor=black)](https://ad1tyac0des.github.io/Refokus/)
 
-## ▶️ Demo
-<div align="center">
-<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hpOWY4c2dxeGd3M3RpNjN6bmljdWR3NGxqNmRwMWkzOTk2MzlyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6Xnbz4lla4I708wyNA/giphy.gif" width="500"/>
-</div>
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hpOWY4c2dxeGd3M3RpNjN6bmljdWR3NGxqNmRwMWkzOTk2MzlyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6Xnbz4lla4I708wyNA/giphy.gif" width="500" height="auto"/>
 
 ## ✨ Key Features
 
