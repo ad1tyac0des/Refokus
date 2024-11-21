@@ -1,20 +1,23 @@
-# Refokus Clone 🚀
-
 <div align="center">
-  <img src="https://i.postimg.cc/ryvRY8X4/image-1.png" width="100%"/>
-  
-  <br/>
+  <h1 style="font-size: 3rem; ">Refokus Clone 🚀</h1>
+
+  Its Time to Refokus!
 
   [![React](https://img.shields.io/badge/react-%23087EA4.svg?style=for-the-badge&logo=react&logoColor=white&labelColor=087EA4&color=149ECA)](https://reactjs.org/)
   [![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
   [![GSAP](https://img.shields.io/badge/gsap-88CE02.svg?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
   [![Framer Motion](https://img.shields.io/badge/framer_motion-black.svg?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
   [![Locomotive Scroll](https://img.shields.io/badge/locomotive_scroll-0C0C0C.svg?style=for-the-badge&logo=locomotive&logoColor=white)](https://locomotivemtl.github.io/locomotive-scroll/)
+
+  <img src="https://i.postimg.cc/ryvRY8X4/image-1.png" width="100%"/>
 </div>
 
 ## 📖 Overview
 
 A pixel-perfect clone of [Refokus Work Page](https://refokus.com/work) built with React and modern web technologies. This project showcases advanced animations, smooth scrolling effects, and responsive design principles.
+
+## ▶️ Demo
+![Demo Preview](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hpOWY4c2dxeGd3M3RpNjN6bmljdWR3NGxqNmRwMWkzOTk2MzlyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6Xnbz4lla4I708wyNA/giphy.gif)
 
 ## ✨ Key Features
 
