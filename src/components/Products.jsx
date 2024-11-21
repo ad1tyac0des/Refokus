@@ -10,7 +10,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#5255EE",
-            media: "arqitel"
+            media: "arqitel",
         },
 
         {
@@ -19,7 +19,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#46289A",
-            media: "ttr"
+            media: "ttr",
         },
 
         {
@@ -28,7 +28,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#5D4EFF",
-            media: "yir"
+            media: "yir",
         },
 
         {
@@ -37,7 +37,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#7E1FFF",
-            media: "yahoo"
+            media: "yahoo",
         },
 
         {
@@ -46,7 +46,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#1430D4",
-            media: "rainfall"
+            media: "rainfall",
         },
 
         {
@@ -55,7 +55,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#0000FF",
-            media: "jungle"
+            media: "jungle",
         },
 
         {
@@ -64,7 +64,7 @@ const Products = () => {
             btn1: true,
             btn2: false,
             background: "#FF7548",
-            media: "silvr"
+            media: "silvr",
         },
     ]);
     const [pos, setPos] = useState(0);
@@ -115,31 +115,28 @@ const Products = () => {
                         y: `${pos}rem`, // move as mouse moves to different products
                     }}
                     transition={{
-                        x: { duration: .1, ease: [0.19, 1, 0.22, 1] },
-                        y: { duration: .3 },
+                        x: { duration: 0.1, ease: [0.19, 1, 0.22, 1] },
+                        y: { duration: 0.3 },
                     }}
                     style={{ top: `${moveY}%` }} // move as mouse moves in y axis in product (subtle hover effect)
                     className="window w-[32rem] h-[22.8rem] absolute left-[43.5%]"
                 >
-                    {products.map(
-                        (elem, index) =>
-                            hoveredCardIndex === index && (
-                                <motion.div
-                                    key={index}
-                                    transition={{
-                                        duration: 0.3,
-                                    }}
-                                    className="w-full h-full rounded-xl overflow-hidden"
-                                >
-                                    <video
-                                        autoPlay
-                                        muted
-                                        loop
-                                        src={`assets/videos/products/${elem.media}.webm`}
-                                    ></video>
-                                </motion.div>
-                            )
-                    )}
+                    {products.map((elem, index) => (
+                        <motion.div
+                            key={index}
+                            transition={{
+                                duration: 0.3,
+                            }}
+                            className={`w-full h-full rounded-xl overflow-hidden ${hoveredCardIndex === index ? "block" : "hidden"}`}
+                        >
+                            <video
+                                autoPlay
+                                muted
+                                loop
+                                src={`assets/videos/products/${elem.media}.webm`}
+                            ></video>
+                        </motion.div>
+                    ))}
                 </motion.div>
             </div>
         </div>
