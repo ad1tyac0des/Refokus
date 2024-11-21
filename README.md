@@ -18,7 +18,7 @@ A pixel-perfect clone of Refokus Work Page built with React and modern web techn
 
 [![Live Demo](https://img.shields.io/badge/LIVE_DEMO-%238B5CF6.svg?style=for-the-badge&labelColor=f5f5f5&logo=github&logoColor=black)](https://ad1tyac0des.github.io/Refokus/)
 
-<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hpOWY4c2dxeGd3M3RpNjN6bmljdWR3NGxqNmRwMWkzOTk2MzlyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6Xnbz4lla4I708wyNA/giphy.gif" width="500" height="auto"/>
+<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hpOWY4c2dxeGd3M3RpNjN6bmljdWR3NGxqNmRwMWkzOTk2MzlyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6Xnbz4lla4I708wyNA/giphy.gif" width="100%" height="auto"/>
 
 ## ✨ Key Features
 
@@ -74,6 +74,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   Made with ❤️ by Aditya Singh
 
   <br/>
+
   
   [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ad1tyac0des)
   [![LinkedIn](https://img.shields.io/badge/linkedin-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2&color=0D76E3)](https://linkedin.com/in/adytyadev)
